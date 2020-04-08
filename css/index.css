@@ -275,4 +275,13 @@ h1, h2, h3, h4, h5 {
     .content .flex-container{
         flex-direction: column;
     }
+
+    /* Contact Styles */
+    #contact{
+        padding: 30px 20px;
+    }
+
+    #contact-address p:nth-of-type(3){
+        margin: 20px 0;
+    }
 }
