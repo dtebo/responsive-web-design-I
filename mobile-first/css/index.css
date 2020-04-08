@@ -65,8 +65,8 @@ h1, h2, h3, h4, h5 {
 
 /* Wrapper Styles */
 .site-wrapper{
-	margin: 0 auto;
-	width: 80%;
+	/* margin: 0 30px; */
+	width: 100%;
 }
 
 /* Global Style Classes */
@@ -87,15 +87,65 @@ h1, h2, h3, h4, h5 {
 .site-navigation{
     flex-direction: column;
     line-height: 2.5em;
+    /* margin: 0 30px; */
     padding: 30px 0;
+}
+
+#nav-link-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-link-container a{
+    border-top: 1px solid black;
+    color: #f08710;
+    font-family: 'Bellota';
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+#nav-link-container a:last-of-type{
+    border-bottom: 1px solid black;
+}
+
+#nav-link-container a:before{
+	content: '';
+	position: relative;
+	top: 0;
+	left: 40px;
+	transition: all .2s ease-in-out;
+}
+
+#nav-link-container a:hover:before{
+	content: '<';
+	top: 0;
+	left: 0;
+}
+
+#nav-link-container a:after{
+	content: '';
+	position: relative;
+	top: 0;
+	right: 40px;
+	transition: all .2s ease-in-out;
+}
+
+#nav-link-container a:hover:after{
+	content: '>';
+	top: 0;
+	right: 0;
 }
 
 #logo-container{
     justify-content: center;
     order: -1;
+    padding-bottom: 20px;
 }
 
 /* Hero Styles */
 #hero-img{
     display: none;
 }
+
+/* Content Styles */
