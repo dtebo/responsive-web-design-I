@@ -234,13 +234,26 @@ h1, h2, h3, h4, h5 {
 
 /* Mobile */
 @media (max-width: 500px){
+    /* Primary Wrapper Styles */
+    .site-wrapper{
+        width: 100%;
+    }
+
+    /* Hero Styles */
+    .hero{
+        padding: 60px 0;
+    }
+
     /*Navigation Styles*/
     .site-navigation{
         height: auto;
+        padding: 0;
+        width: 100%;
     }
 
     #nav-link-container{
         flex-direction: column;
+        padding: 0;
     }
 
     #nav-link-container a{
@@ -250,5 +263,16 @@ h1, h2, h3, h4, h5 {
         width: 100%;
     }
 
+    #nav-link-container a:last-of-type{
+        border-bottom: 1px solid black;
+    }
 
+    /* Content Styles */
+    .content{
+        padding: 30px 20px;
+    }
+
+    .content .flex-container{
+        flex-direction: column;
+    }
 }
