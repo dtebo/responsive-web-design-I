@@ -3,14 +3,91 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Great Idea - Responsive I</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <title>Great Idea!</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web|Bellota" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
 </head>
-
-<body>
-<!-- Use past code you created here for Great Idea Web Page or past solution for Great Idea Web Page HTML here! -->
-</body>
+  <body>
+    <nav class="site-navigation flex-container horizontal">
+      <div id="nav-link-container" class="flex-container horizontal">
+        <a href="services.html">Services</a>
+        <a href="#">Product</a>
+        <a href="#">Vision</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="logo-container">
+        <img alt="logo" class="logo" src="img/logo.png">
+      </div>
+    </nav>
+    <div class="site-wrapper">
+      <header class="hero">
+        <div class="flex-container horizontal">
+          <div id="hero-text" class="flex-container vertical">
+            <h1>
+              <p>Innovation</p>
+              <p>On</p>
+              <p>Demand</p>
+            </h1>
+            <button id="call-to-action">Get Started</button>
+          </div>
+          <div id="hero-img" class="flex-container horizontal">
+            <img alt="hero image" src="img/header-img.png">
+          </div>
+        </div>
+      </header>
+  
+      <!-- Content Section -->
+      <section class="content flex-container vertical">
+        <div class="flex-container horizontal">
+          <div id="features">
+            <h2>Features</h2>
+            <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+          </div>
+          <div id="about">
+            <h2>About</h2>
+            <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+          </div>
+        </div>
+        <img alt="content image" src="img/mid-page-accent.jpg">
+        <div class="flex-container horizontal">
+          <div id="services">
+            <h2>Services</h2>
+            <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+          </div>
+          <div id="product">
+            <h2>Product</h2>
+            <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+          </div>
+          <div id="vision">
+            <h2>Vision</h2>
+            <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Contact Section -->
+      <section id="contact" class="flex-container vertical">
+        <h2>Contact</h2>
+        <address id="contact-address">
+          <p>123 Way 456 Street</p>
+          <p>Somewhere, USA</p>
+          <p><a href="tel:18888888888">1 (800) 888-8888</a></p>
+          <p><a href="mailto:sales@greatideas.io">sales@greatideas.io</a></p>
+        </address>
+      </section>
+  
+      <!-- Footer -->
+      <footer class="page-footer flex-container horizontal">
+        <p>Copyright &copy; Great Ideas 2018</p>
+      </footer>
+    </div>
+  </body>
 </html>
