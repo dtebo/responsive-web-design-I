@@ -1,0 +1,67 @@
+/* Hero Styles */
+.hero div{
+    margin: 0 0 40px 0;
+}
+
+/* Content Styles */
+.content div{
+    width: 98%;
+}
+
+/* Card Styles */
+.card{
+    align-content: space-around;
+    background: #f8f8f8;
+    border: 1px solid black;
+    height: 200px;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* width: 430px; */
+}
+
+.card button{
+    background: #fefefe;
+    border: 1px solid black;
+    height: 30px;
+    width: 125px;
+}
+
+/* Service Facts Styles */
+#service-facts{
+    margin: 50px 0;
+}
+
+#service-facts div{
+    margin: 0 20px 0 0;
+}
+
+#service-facts ul{
+    list-style-type: disc;
+    margin: 0 0 0 50px;
+}
+
+#service-facts ul li{
+    margin: 0 0 10px 0;
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 740px){
+    .content{
+        flex-direction: column;
+        transition: all .5s ease-in-out;
+    }
+
+    /* Service Facts Styles */
+    #service-facts{
+        flex-direction: column;
+    }
+
+    #service-facts div:nth-of-type(2){
+        margin-bottom: 30px;
+        order: -1;
+    }
+
+    #service-facts div > p{
+        margin-bottom: 20px;
+    }
+}
