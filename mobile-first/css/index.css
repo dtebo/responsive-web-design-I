@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5 {
     /* Primary Wrapper Styles */
     .site-wrapper{
         margin: 0 auto;
-	    width: 80%;
+	    width: 90%;
     }
 
     /* Navigation Styles */
@@ -262,8 +262,8 @@ h1, h2, h3, h4, h5 {
         padding: 140px 0 100px 0;
     }
 
-    .hero div{
-        justify-content: space-between;
+    .hero > div.flex-container:first-of-type{
+        justify-content: space-evenly;
     }
 
     #hero-img{
